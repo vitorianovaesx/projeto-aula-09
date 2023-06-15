@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 
 const sqlite3 = require('sqlite3');
-const DBPATH = '../data/database.db';
+const DBPATH = './data/database.db';
 
-app.use(express.static("../frontend/"));
+app.use(express.static("./frontend/"));
 app.use(express.json());
 
 const hostname = '127.0.0.1';
